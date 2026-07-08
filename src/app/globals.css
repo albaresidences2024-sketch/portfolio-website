@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #dfba6b;
+  --color-gold-hover: #f3d188;
+  --color-gold-dark: #b89548;
+  --color-gold-muted: rgba(223, 186, 107, 0.1);
+  --color-bg-primary: #07090e;
+  --color-bg-secondary: #0f121a;
+  --color-bg-card: rgba(18, 22, 33, 0.7);
+  --color-border-gold: rgba(223, 186, 107, 0.2);
+  --color-border-light: rgba(255, 255, 255, 0.06);
+  
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Custom Scrollbar for Luxury Aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #07090e;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(223, 186, 107, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(223, 186, 107, 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #07090e;
+  color: #f5f6f8;
+}
+
+body {
+  background-color: #07090e;
+  color: #f5f6f8;
+}
+
+/* Scroll reveal items initial state */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
