@@ -3,6 +3,17 @@ import Header from "@/components/Header";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
 
+// Static Imports of Images
+import profileImg from "../../public/profile.jpeg";
+import albaLogo from "../../public/ALBA_logo.png";
+import swapLogo from "../../public/swap_logo.png";
+import westminsterLogo from "../../public/university-of-westminster.png";
+import johnCabotLogo from "../../public/john_cabot.png";
+import pierceLogo from "../../public/pierce.png";
+import knowcrunchLogo from "../../public/knowcrunch.png";
+import unicLogo from "../../public/unic.png";
+
+
 export default function Home() {
   return (
     <>
@@ -51,7 +62,7 @@ export default function Home() {
             <div className="relative border border-border-gold rounded-lg p-2.5 bg-bg-secondary/40 backdrop-blur shadow-2xl hover:scale-[1.02] hover:border-gold transition-all duration-500 group">
               <div className="relative w-[280px] h-[360px] md:w-[320px] md:h-[420px] rounded overflow-hidden">
                 <Image 
-                  src="/profile.jpeg" 
+                  src={profileImg} 
                   alt="Claire Ponirou" 
                   fill
                   priority
@@ -146,7 +157,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gold/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative w-52 h-24">
                   <Image 
-                    src="/ALBA_logo.png" 
+                    src={albaLogo} 
                     alt="ALBA RESIDENCES Logo" 
                     fill
                     unoptimized
@@ -198,7 +209,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gold/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative w-52 h-24">
                   <Image 
-                    src="/swap_logo.png" 
+                    src={swapLogo} 
                     alt="SWAP Logo" 
                     fill
                     unoptimized
@@ -335,7 +346,7 @@ export default function Home() {
                 <div className="bg-bg-card border border-border-light p-6 rounded-lg hover:border-border-gold transition-colors duration-300 flex gap-4 items-center">
                   <div className="relative w-12 h-12 bg-white rounded p-1 flex-shrink-0 flex items-center justify-center overflow-hidden">
                     <Image
-                      src="/university-of-westminster.png"
+                      src={westminsterLogo}
                       alt="University of Westminster Logo"
                       fill
                       unoptimized
@@ -351,7 +362,7 @@ export default function Home() {
                 <div className="bg-bg-card border border-border-light p-6 rounded-lg hover:border-border-gold transition-colors duration-300 flex gap-4 items-center">
                   <div className="relative w-12 h-12 bg-white rounded p-1 flex-shrink-0 flex items-center justify-center overflow-hidden">
                     <Image
-                      src="/john_cabot.png"
+                      src={johnCabotLogo}
                       alt="John Cabot University Logo"
                       fill
                       unoptimized
@@ -367,7 +378,7 @@ export default function Home() {
                 <div className="bg-bg-card border border-border-light p-6 rounded-lg hover:border-border-gold transition-colors duration-300 flex gap-4 items-center">
                   <div className="relative w-12 h-12 bg-white rounded p-1 flex-shrink-0 flex items-center justify-center overflow-hidden">
                     <Image
-                      src="/pierce.png"
+                      src={pierceLogo}
                       alt="Pierce College Logo"
                       fill
                       unoptimized
@@ -392,7 +403,7 @@ export default function Home() {
                 <div className="bg-bg-card border border-border-light p-6 rounded-lg hover:border-border-gold transition-colors duration-300 flex gap-4 items-center">
                   <div className="relative w-12 h-12 bg-white rounded p-1 flex-shrink-0 flex items-center justify-center overflow-hidden">
                     <Image
-                      src="/knowcrunch.png"
+                      src={knowcrunchLogo}
                       alt="Knowcrunch Logo"
                       fill
                       unoptimized
@@ -408,7 +419,7 @@ export default function Home() {
                 <div className="bg-bg-card border border-border-light p-6 rounded-lg hover:border-border-gold transition-colors duration-300 flex gap-4 items-center">
                   <div className="relative w-12 h-12 bg-white rounded p-1 flex-shrink-0 flex items-center justify-center overflow-hidden">
                     <Image
-                      src="/knowcrunch.png"
+                      src={knowcrunchLogo}
                       alt="Knowcrunch Logo"
                       fill
                       unoptimized
@@ -424,7 +435,7 @@ export default function Home() {
                 <div className="bg-bg-card border border-border-light p-6 rounded-lg hover:border-border-gold transition-colors duration-300 flex gap-4 items-center">
                   <div className="relative w-12 h-12 bg-white rounded p-1 flex-shrink-0 flex items-center justify-center overflow-hidden">
                     <Image
-                      src="/unic.png"
+                      src={unicLogo}
                       alt="UNIC Logo"
                       fill
                       unoptimized
@@ -440,7 +451,7 @@ export default function Home() {
                 <div className="bg-bg-card border border-border-light p-6 rounded-lg hover:border-border-gold transition-colors duration-300 flex gap-4 items-center">
                   <div className="relative w-12 h-12 bg-white rounded p-1 flex-shrink-0 flex items-center justify-center overflow-hidden">
                     <Image
-                      src="/unic.png"
+                      src={unicLogo}
                       alt="UNIC Logo"
                       fill
                       unoptimized
